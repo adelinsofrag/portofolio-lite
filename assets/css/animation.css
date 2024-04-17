@@ -1,0 +1,34 @@
+/* Keyboard Utilities */
+.keyboard {
+  margin-top: 20px;
+  width: 500px;
+  height: 200px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.key {
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  border-radius: 5px;
+  margin: 5px;
+  float: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.animated-key {
+  animation: clickAnimation 0.75s linear infinite alternate;
+}
+
+@keyframes clickAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
